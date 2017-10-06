@@ -28,16 +28,17 @@ Please refer to the README of each module to have more information about
 how to configure and use the modules.
 
 [//]: # (addons)
-Unported addons
----------------
+
+Available addons
+----------------
 addon | version | summary
 --- | --- | ---
-[donation](donation/) | 8.0.0.1.0 (unported) | Manage donations
-[donation_bank_statement](donation_bank_statement/) | 8.0.0.1.0 (unported) | Creates donation from unreconciled bank statement lines
-[donation_direct_debit](donation_direct_debit/) | 8.0.0.1.0 (unported) | Auto-generate direct debit order on donation validation
-[donation_recurring](donation_recurring/) | 8.0.0.1.0 (unported) | Manage recurring donations
-[donation_recurring_tax_receipt](donation_recurring_tax_receipt/) | 8.0.0.1.0 (unported) | Manage recurring donations with tax receipts
-[donation_tax_receipt](donation_tax_receipt/) | 8.0.0.2.0 (unported) | Manage tax receipts for donations
-[donation_thanks](donation_thanks/) | 8.0.0.1.0 (unported) | Create thanks letter for a donation
+[donation](donation/) | 10.0.1.0.0 | Manage donations
+[donation_bank_statement](donation_bank_statement/) | 10.0.1.0.0 | Creates donation from unreconciled bank statement lines
+[donation_base](donation_base/) | 10.0.1.0.0 | Base module for donations
+[donation_direct_debit](donation_direct_debit/) | 10.0.1.0.0 | Auto-generate direct debit order on donation validation
+[donation_recurring](donation_recurring/) | 10.0.1.0.0 | Manage recurring donations
+[donation_sale](donation_sale/) | 10.0.1.0.0 | Manage donations in sale orders
+[donation_thanks](donation_thanks/) | 10.0.1.0.0 | Create thanks letter for a donation
 
 [//]: # (end addons)
