@@ -6,6 +6,7 @@
 from odoo import models, fields, api, _
 from odoo.exceptions import UserError, ValidationError
 from odoo.tools import float_is_zero, float_compare
+from odoo.addons.account import _auto_install_l10n
 
 
 class DonationDonation(models.Model):
@@ -172,8 +173,9 @@ class DonationDonation(models.Model):
         }
         return vals
 
-    @api.model
+    @api.multi
     def _prepare_move_line_name(self):
+        self.ensure_one()
         name = _('Donation of %s') % self.partner_id.name
         return name
 
@@ -454,6 +456,13 @@ class DonationDonation(models.Model):
                 }
             self.tax_receipt_option = 'annual'
         return res
+
+    @api.model
+    def auto_install_l10n(self):
+        """Helper function for calling a method that is not accessible directly
+        from XML data.
+        """
+        _auto_install_l10n(self.env.cr, None)
 
 
 class DonationLine(models.Model):
